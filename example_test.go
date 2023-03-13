@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// +build linux darwin freebsd
+//go:build linux || darwin || freebsd
 
 package magicmime_test
 
 import (
 	"log"
 
-	"github.com/rakyll/magicmime"
+	"github.com/jackielii/magicmime"
 )
 
 func ExampleTypeByFile() {
